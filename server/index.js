@@ -39,7 +39,7 @@ app.get("/health",checkHealth)
 
 //app.use("*",handleErrorNotFound)
 
-const PORT= process.env.port;
+const PORT= process.env.PORT;
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
