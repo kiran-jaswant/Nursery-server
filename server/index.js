@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 
 import { checkHealth } from "./controllers/health.js";
-import { getAllPlants,postPlant,getPlantId ,putPlant,deletePlant} from "./controllers/Plants.js";
+import { getAllPlants,postPlant,getPlantId ,putPlant,deletePlant} from "./controllers/plants.js";
 const dbconnection=async()=>{
 
     const connection= await mongoose.connect(process.env.MONGO_URL );
